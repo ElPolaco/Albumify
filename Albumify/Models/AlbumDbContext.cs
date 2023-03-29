@@ -10,7 +10,7 @@ namespace Albumify.Models
     {
         public AlbumDbContext() : base("name=AlbumDbConnection")
         {
-
+           
         }
         public DbSet<Album> Albums { get; set; }
         public DbSet<Track> Tracks { get; set; }
