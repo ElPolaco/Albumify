@@ -11,24 +11,7 @@ using System.Web.Mvc;
 namespace Albumify.Controllers
 {
     public class AlbumController : Controller
-    {
-        // GET: Album
-        public string Index()
-        {
-            string res = "";
-           using (var ctx=new AlbumDbContext())
-            {
-             foreach(var album in ctx.Albums.Where(a=>a.ReleaseDate.Year==1991))
-              {
-                    res+=album.Name+" by ";
-                    res+=album.Author + " released in ";
-                    res+=album.ReleaseDate.Year; 
-                
-              }   
-            }
-            return res;
-        }
-
+    {       
         public ActionResult ListAll()
         {
             List<Album> albums;
