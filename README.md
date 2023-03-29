@@ -8,4 +8,5 @@ Technologie:
 - Javascript, JQuery
 - Bootstrap
 - Baza danych SQL Server
+- LINQ
 - Testy jednostkowe (Visual Studio Test Tools)
