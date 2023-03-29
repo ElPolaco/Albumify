@@ -1,0 +1,46 @@
+﻿@model Albumify.ViewModels.AlbumViewModel
+<style>
+    .album {
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+        .album img {
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .album h3 {
+            margin-top: 0;
+        }
+
+        .album p {
+            margin-bottom: 0;
+        }
+</style>
+
+<div class="container">
+    <h1>Albumy muzyczne</h1>
+    <div class="btn-group" role="group" aria-label="Przyciski wyboru">
+        <button type="button" class="btn btn-default active" data-type="all">Wszystkie</button>
+        <button type="button" class="btn btn-default" data-type="year" data-value="1991">Z 1991</button>
+        <button type="button" class="btn btn-default" data-type="author" data-value="Nirvana">Tylko Nirvana</button>
+        <button type="button" class="btn btn-default" data-type="year2" data-value="198">80's</button>
+
+    </div>
+
+    @foreach (var album in Model.Albums)
+    {
+        <div class="album" data-year="@album.ReleaseDate.Year" data-author="@album.Author">
+            <a href="/Album/@album.Author/@album.Name">
+                <img src="@album.CoverImage">
+                <h3>@album.Author - @album.Name </h3>
+                <p>@album.ReleaseDate.Year</p>
+            </a>
+        </div>
+
+    }
+</div>

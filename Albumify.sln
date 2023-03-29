@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albumify", "Albumify\Albumify.csproj", "{41416BB0-6130-4EFE-BEB9-E92FEB8B4A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albumify.Tests", "Albumify.Tests\Albumify.Tests.csproj", "{CFA26D92-88B0-41F4-8154-25D028722544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41416BB0-6130-4EFE-BEB9-E92FEB8B4A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41416BB0-6130-4EFE-BEB9-E92FEB8B4A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41416BB0-6130-4EFE-BEB9-E92FEB8B4A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41416BB0-6130-4EFE-BEB9-E92FEB8B4A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA26D92-88B0-41F4-8154-25D028722544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA26D92-88B0-41F4-8154-25D028722544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA26D92-88B0-41F4-8154-25D028722544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA26D92-88B0-41F4-8154-25D028722544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC944D28-4BE2-4CE1-B246-D0BFAAAB56A1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿<style>
+    .author {
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+</style>
+
+<div class="container">
+    <h1>Wykonawcy</h1>
+    @foreach (var author in ViewData["authors"] as List<string>)
+    {
+        <div class="author">
+            <a href="/Album/@author">
+                <h2>@author </h2>
+            </a>
+        </div>
+
+    }
+</div>

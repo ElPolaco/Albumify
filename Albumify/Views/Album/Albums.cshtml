@@ -1,0 +1,38 @@
+﻿@model Albumify.ViewModels.AlbumViewModel
+<style>
+    .album {
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+        .album img {
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .album h3 {
+            margin-top: 0;
+        }
+
+        .album p {
+            margin-bottom: 0;
+        }
+</style>
+
+<div class="container">
+    <h1>Albumy muzyczne autorstwa @Model.Albums.First().Author</h1>
+    @foreach (var album in Model.Albums)
+    {
+        <div class="album">
+            <a href="/Album/@album.Author/@album.Name">
+                <img src="@album.CoverImage">
+                <h3>@album.Author - @album.Name </h3>
+                <p>@album.ReleaseDate.Year</p>
+            </a>
+        </div>
+
+    } 
+</div>

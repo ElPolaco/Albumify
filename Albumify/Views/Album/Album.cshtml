@@ -1,0 +1,22 @@
+﻿@model Albumify.Models.Album
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="@Model.CoverImage" class="img-fluid" style="width:44%">
+            <h1>@Model.Name</h1>
+            <h2>By <a href="/Album/@Model.Author"> @Model.Author</a></h2>
+            <h3>Data wydania: @Model.ReleaseDate.ToString("dd.MM.yyyy")</h3>
+            <hr>
+            <h3>Zawartość albumu:</h3>
+            
+            <ul class="list-group list-group-flush">
+                @foreach (var track in ViewData["tracks"] as List<string>)
+                {
+                <li class="list-group-item">@track</li>
+                }
+            </ul>
+
+        </div>
+    </div>
+</div>
